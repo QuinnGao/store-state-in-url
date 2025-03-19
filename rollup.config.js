@@ -4,6 +4,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import babel from '@rollup/plugin-babel';
 import terser from '@rollup/plugin-terser';
 import typescript from '@rollup/plugin-typescript';
+import config from './tsconfig.json' with { type: "json" };
 
 export default {
     input: 'packages/src/index.ts',
@@ -25,7 +26,10 @@ export default {
         resolve({
             browser: true
         }),
-        typescript(),
+        typescript({
+            tsconfig: './tsconfig.build.json',
+            compilerOptions: { ...config.compilerOptions, declaration: true },
+        }),
         commonjs(),
         babel({
             babelHelpers: 'bundled',

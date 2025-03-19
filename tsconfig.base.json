@@ -1,0 +1,58 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "outDir": "./dist",
+    "declaration": true,
+    "declarationDir": "dist",
+    "noEmit": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "rootDir": "./",
+    "baseUrl": ".",
+    "isolatedModules": true,
+    "removeComments": false,
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
+    "types": [
+      "node",
+      "@testing-library/dom",
+      "@testing-library/jest-dom",
+      "vitest/globals"
+    ],
+    "lib": [
+      "ES2021",
+      "ES2022",
+      "ES2021.String",
+      "DOM",
+      "DOM.Iterable",
+      "ESNext",
+      "ESNext.String"
+    ],
+    "jsx": "preserve",
+    "module": "ESNext",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "typings.d.ts",
+    "packages",
+    "packages/*",
+    "packages/**/*",
+    "packages/**/*.ts",
+    "packages/**/*.tsx",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/dist",
+    "tests",
+    "exportsTest.ts"
+  ]
+}
