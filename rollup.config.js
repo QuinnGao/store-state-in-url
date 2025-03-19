@@ -10,16 +10,9 @@ export default {
     input: 'packages/src/index.ts',
     output: [
         {
-            file: 'dist/bundle.min.js',
-            format: 'iife',
-            name: 'myBundle',
+            file: 'dist/index.mjs',
             plugins: [terser()],
-            sourcemap: true
-        },
-        {
-            file: 'dist/bundle.esm.js',
-            format: 'es',
-            sourcemap: true
+            format: 'es'
         }
     ],
     plugins: [

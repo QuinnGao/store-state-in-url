@@ -1,7 +1,11 @@
 {
   "name": "store-state-in-url",
-  "version": "0.0.3",
-  "main": "index.js",
+  "version": "0.0.4",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "type": "module",
   "repository": {
     "type": "git",
