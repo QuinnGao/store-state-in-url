@@ -9,7 +9,7 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/QuinnGao/store-state-in-url"
+    "url": "git+https://github.com/QuinnGao/store-state-in-url.git"
   },
   "scripts": {
     "build": "rollup -c",
@@ -18,7 +18,8 @@
   "keywords": [
     "state",
     "store",
-    "url"
+    "url",
+    "url state"
   ],
   "author": "Quinn Gao",
   "license": "MIT",
