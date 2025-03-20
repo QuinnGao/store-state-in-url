@@ -20,8 +20,8 @@ npm install store-state-in-url
 ```typescript
 import { encode, decode } from 'store-state-in-url';
 
-encode(url)
-decode(url)
+encode(window.location.href) // output: "foo=bar"
+decode(window.location.href) // output: { foo: 'bar' }
 ```
 
 ## API Documentation

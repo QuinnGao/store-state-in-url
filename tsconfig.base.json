@@ -53,6 +53,7 @@
     "dist",
     "**/dist",
     "tests",
+    "**/__tests__",
     "exportsTest.ts"
   ]
 }

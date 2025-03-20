@@ -22,7 +22,7 @@ const typeOf = (value: unknown): TypeofReturnType => {
     if (value === undefined) return "undefined";
 
     // Get the basic type using Object.prototype.toString
-    const objectType = Object.prototype.toString.call(value).slice(8, -1).toLowerCase();
+    const objectType = Object.prototype.toString.call(value).slice(8, -1).toLowerCase() as TypeofReturnType;
     return objectType;
 };
 
@@ -35,4 +35,4 @@ const getParams = (strOrSearchParams?: string | URLSearchParams) =>
 
 const getQueryFromHref = (str: string) => str.split("?")?.[1] || str || "";
 
-export { structuredClone, typeOf, TypeofReturnType, getParams };
+export { structuredClone, typeOf, getParams };

@@ -38,7 +38,7 @@ const _decode = <T>(payload: string, fallback?: T) => {
         return JSON.parse(_jsonStr) as T;
         // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (_) {
-        return fallback as T;
+        return fallback as T ?? payload;
     }
 }
 
